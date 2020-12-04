@@ -12,6 +12,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/additional.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -26,8 +27,8 @@
 							<li>
 								<a href="board.html">Board</a>
 							</li>
+							<li><a href="signin.html" class="button primary">Sign In</a></li>
 							<li><a href="signup.html" class="button primary">Sign Up</a></li>
-							<li><a href="join.html" class="button primary">Join</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -39,30 +40,31 @@
 							<h2>게시판 작성</h2>
 						</header>
 
-						
-
 						<!-- Form -->
 							<section>
 								<form method="post" action="#">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-12">
 											<input type="text" name="title" id="title" value="" placeholder="제목" />
+											<div id="title_error" class="error"></div>
 										</div>
 										<div class="col-12">
 											<input type="text" name="subtitle" id="subtitle" value="" placeholder="소제목" />
 										</div>
 										<div class="col-12">
 											<input type="file" name="file" id="file" value="" placeholder="이미지파일" />
+											<div id="file_error" class="error"></div>
 										</div>
 										<div class="col-12">
 											<textarea name="contents" id="contents" placeholder="내용을 입력하세요." rows="6"></textarea>
+											<div id="contents_error" class="error"></div>
 										</div>
 										<div class="col-12">
 											<ul class="actions">
 												<li><a href="board.html" class="button primary">목록</a></li>
 												<li></li>
 												<li></li>
-												<li><input type="submit" value="저장" class="primary" /></li>
+												<li><input id="save_btn" type="submit" value="저장" class="primary" /></li>
 												<li><input type="reset" value="작성취소" /></li>
 											</ul>
 										</div>
@@ -99,6 +101,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/additional.js"></script>
 
 	</body>
 </html>
