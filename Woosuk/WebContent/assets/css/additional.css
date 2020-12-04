@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.error {
+	margin: 1em;
+	color: #e44c65;
+}
+
+.non_error {
+	margin: 1em;
+	color: #00ff00;
+} 
